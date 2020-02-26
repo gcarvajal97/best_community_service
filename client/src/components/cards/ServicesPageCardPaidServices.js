@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const HomePageCardDonate = () => {
+export const HomePageCardServices = () => {
   const styles = useStyles();
   const mediaStyles = useWideCardMediaStyles();
   const textCardContentStyles = useText01CardContentStyles();
@@ -39,13 +39,14 @@ export const HomePageCardDonate = () => {
       <CardContent className={styles.content}>
         <TextInfoCardContent
           classes={textCardContentStyles}
-          heading={'Every Donation Helps!'}
+          overline={'March 20, 2020'}
+          heading={'Spanish Lessons @ 5:00pm! Price: $5'}
           body={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           }
         />
-        <Button color={'primary'} fullWidth className={styles.cta} href={'/donations'}>
-          Donate Today! <ChevronRightRounded />
+        <Button color={'primary'} fullWidth className={styles.cta} href={'/services'}>
+          Reserve Spot <ChevronRightRounded />
         </Button>
       </CardContent>
     </Card>
@@ -53,4 +54,4 @@ export const HomePageCardDonate = () => {
 };
 
 
-export default HomePageCardDonate;
+export default HomePageCardServices;

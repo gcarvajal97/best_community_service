@@ -10,6 +10,7 @@ import Donations from './components/donations';
 import Events from './components/events';
 import Employee from './components/employee-login';
 import AboutUs from './components/about-us';
+import { EventRegistration } from './components/event-registration';
 
 
 const routing = (
@@ -29,9 +30,10 @@ const routing = (
         <Route path="/aboutUs" component={AboutUs} />
         <Route path="/services" component={Services} />
         <Route path="/donations" component={Donations} />
-        <Route path="/events" component={Events} />
+        <Route exact path="/events" component={Events} />
         <Route path="/externalServices" component={ExternalServices} />
         <Route path="/employee" component={Employee} />
+        <Route path='/events/registration' component={EventRegistration}/>
       </div>
     </Router>
   )

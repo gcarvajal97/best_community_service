@@ -40,12 +40,12 @@ export const HomePageCardServices = () => {
         <TextInfoCardContent
           classes={textCardContentStyles}
           overline={'March 20, 2020'}
-          heading={'Yoga @ 3:00pm!'}
+          heading={'Yoga @ 3:00pm! Price: $0'}
           body={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           }
         />
-        <Button color={'primary'} fullWidth className={styles.cta}>
+        <Button color={'primary'} fullWidth className={styles.cta} href={'/services'}>
           Reserve Spot <ChevronRightRounded />
         </Button>
       </CardContent>

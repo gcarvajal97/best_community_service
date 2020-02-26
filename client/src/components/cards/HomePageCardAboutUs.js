@@ -45,7 +45,7 @@ const HomePageCardAboutUs = () => {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           }
         />
-          <Button color={'primary'} fullWidth className={styles.cta} component={Link} to="/aboutUs" >
+          <Button color={'primary'} fullWidth className={styles.cta} component={Link} href={"/aboutUs"} >
             About Us <ChevronRightRounded />
           </Button>
         
