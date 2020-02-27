@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const EventPageCardReservationsCourtyard = () => {
+export const DonationsPageCardAnonymous = () => {
   const styles = useStyles();
   const mediaStyles = useWideCardMediaStyles();
   const textCardContentStyles = useText01CardContentStyles();
@@ -39,13 +39,13 @@ export const EventPageCardReservationsCourtyard = () => {
       <CardContent className={styles.content}>
         <TextInfoCardContent
           classes={textCardContentStyles}
-          heading={'Reserve our Spacious Courtyard! $100 an hour'}
+          heading={'Every Donation Matters! Leave an anonymous donation today!'}
           body={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           }
         />
-        <Button color={'primary'} fullWidth className={styles.cta} href={'/events/registration/Courtyard'}>
-          Reserve Spot <ChevronRightRounded />
+        <Button color={'primary'} fullWidth className={styles.cta} href={'/donations/anonymous'}>
+          Donate Anonmously Today! <ChevronRightRounded />
         </Button>
       </CardContent>
     </Card>
@@ -53,4 +53,4 @@ export const EventPageCardReservationsCourtyard = () => {
 };
 
 
-export default EventPageCardReservationsCourtyard;
+export default DonationsPageCardAnonymous;

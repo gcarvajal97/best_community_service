@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import aboutUs from '../public/aboutUs.jpeg'
 
 class AboutUs extends Component {
   
@@ -10,9 +11,9 @@ class AboutUs extends Component {
           <h1 style={{fontFamily: 'cursive', 'text-align': 'center'}}>About Us</h1>
         </div>
         <div className="AboutUs-content">
-        <h1>
-        Generic header image here...
-        </h1>
+          <header style={{fontFamily: 'cursive', 'text-align': 'center'}}>
+            <img src={aboutUs} alt={aboutUs}/>
+          </header>
           <h2 style={{fontFamily: 'cursive'}}>
           Our Mission:
           </h2>

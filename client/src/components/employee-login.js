@@ -14,8 +14,6 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
 
 const styles = ({ breakpoints, palette }) => {
-  const cover =
-    'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80';
   const backDropBG = 'rgba(0,0,0,0.7)';
   return {
     root: {
@@ -23,7 +21,6 @@ const styles = ({ breakpoints, palette }) => {
       textAlign: 'left',
       height: 700,
       position: 'relative',
-      background: `url(${cover})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       color: '#ffffff',
@@ -63,14 +60,6 @@ const styles = ({ breakpoints, palette }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'flex-end',
-    },
-    logo: {
-      width: 40,
-      height: 40,
-      marginLeft: 'auto',
-      [breakpoints.up('sm')]: {
-        marginRight: 'auto',
-      },
     },
     mlNormal: {
       marginLeft: 16,
@@ -138,13 +127,6 @@ const EmployeeLogin = withStyles(styles, { name: 'LoginPage' })(
                 </Typography>
               </Grid>
               <Grid item xs container>
-                <img
-                  alt={'logo'}
-                  className={classes.logo}
-                  src={
-                    'https://world2cover.com.au/assets/brands/w2c/logo-icon-f15d330e1176082c699f4713f50df2c725145889cbe20d43d3386e55ee458f50.png'
-                  }
-                />
               </Grid>
             </Grid>
           </Toolbar>

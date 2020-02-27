@@ -11,25 +11,27 @@ import Events from './components/events';
 import Employee from './components/employee-login';
 import AboutUs from './components/about-us';
 import { EventRegistration } from './components/event-registration';
+import { DonationPayment } from './components/donations-payment';
 
 
 const routing = (
     <Router>
       <div>
-      <div>
-          <Tab label="Home" to="/" component={Link} />
-          <Tab label="About Us" to="/aboutUs" component={Link} />
-          <Tab label="Services" to="/services" component={Link} />
-          <Tab label="Donations" to="/donations" component={Link} />
-          <Tab label="Events" to="/events" component={Link} />
-          <Tab label="External Services" to="/externalServices" component={Link} />
-          <Tab label="Employee Login" to="/employee" component={Link} />
-      </div>
+        <div>
+            <Tab label="Home" to="/" component={Link} />
+            <Tab label="About Us" to="/aboutUs" component={Link} />
+            <Tab label="Services" to="/services" component={Link} />
+            <Tab label="Donations" to="/donations" component={Link} />
+            <Tab label="Events" to="/events" component={Link} />
+            <Tab label="External Services" to="/externalServices" component={Link} />
+            <Tab label="Employee Login" to="/employee" component={Link} />
+        </div>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
         <Route path="/aboutUs" component={AboutUs} />
         <Route path="/services" component={Services} />
-        <Route path="/donations" component={Donations} />
+        <Route exact path="/donations" component={Donations} />
+        <Route exact path="/donations/:donationType" component={DonationPayment} />
         <Route exact path="/events" component={Events} />
         <Route path="/externalServices" component={ExternalServices} />
         <Route path="/employee" component={Employee} />
