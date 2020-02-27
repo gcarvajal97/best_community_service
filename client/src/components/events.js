@@ -1,6 +1,7 @@
 import React from 'react'
-import HomePageCardServices from './cards/HomePageCardServices';
-import ServicesPageCardPaidServices from './cards/ServicesPageCardPaidServices';
+import EventPageCardReservationsGym from './cards/EventPageCardReservationsGym'
+import EventPageCardReservationsCourtyard from './cards/EventPageCardReservationsCourtyard'
+
 class Events extends React.Component {
   render() {
     return (
@@ -8,10 +9,10 @@ class Events extends React.Component {
       <div>
           <h1 style={{fontFamily: 'cursive', 'text-align': 'center'}}>Events and Space Reservation</h1>
         </div>
-        <div className="Events-content">
-          <HomePageCardServices />
-          <ServicesPageCardPaidServices />
-      </div>
+        <div className="Events-content" style={{display:'flex', 'flex-direction':'row'}}>
+          <EventPageCardReservationsGym />
+          <EventPageCardReservationsCourtyard />
+        </div>
     </div>
     )
   }

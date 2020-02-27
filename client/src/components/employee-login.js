@@ -19,12 +19,6 @@ const styles = ({ breakpoints, palette }) => {
   const backDropBG = 'rgba(0,0,0,0.7)';
   return {
     root: {
-      // when you use it, change to 100vh
-      // "100vh" is not perfect for all screen ex. iPhone X
-
-      // 2 solutions
-      // https://github.com/ulrichformann/react-div-100vh
-      // https://github.com/mvasin/react-div-100vh
       width: '100%',
       textAlign: 'left',
       height: 700,

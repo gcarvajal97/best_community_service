@@ -33,7 +33,8 @@ const routing = (
         <Route exact path="/events" component={Events} />
         <Route path="/externalServices" component={ExternalServices} />
         <Route path="/employee" component={Employee} />
-        <Route path='/events/registration' component={EventRegistration}/>
+        <Route exact path='/events/registration/' component={EventRegistration}/>
+        <Route exact path='/events/registration/:eventSpace' component={EventRegistration}/>
       </div>
     </Router>
   )

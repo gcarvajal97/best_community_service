@@ -6,7 +6,7 @@ class AboutUs extends Component {
   render() {
     return (
       <div className="AboutUs">
-      <div>
+        <div>
           <h1 style={{fontFamily: 'cursive', 'text-align': 'center'}}>About Us</h1>
         </div>
         <div className="AboutUs-content">

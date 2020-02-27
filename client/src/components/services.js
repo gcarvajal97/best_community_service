@@ -6,13 +6,13 @@ class Services extends React.Component {
   render() {
     return (
       <div className="Services">
-      <div>
+        <div>
           <h1 style={{fontFamily: 'cursive', 'text-align': 'center'}}>Services and Programs</h1>
         </div>
         <div className="Services-content" style={{display:'flex', 'flex-direction':'row'}}>
           <HomePageCardServices />
           <ServicesPageCardPaidServices />
-      </div>
+        </div>
     </div>
     )
   }
