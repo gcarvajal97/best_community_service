@@ -12,7 +12,10 @@ import Employee from './components/employee-login';
 import AboutUs from './components/about-us';
 import { EventRegistration } from './components/event-registration';
 import { DonationPayment } from './components/donations-payment';
+import { ServiceRegistration } from './components/service-registration';
+import Admin from './components/admin';
 
+import './styles/index.css';
 
 const routing = (
     <Router>
@@ -29,12 +32,14 @@ const routing = (
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
         <Route path="/aboutUs" component={AboutUs} />
-        <Route path="/services" component={Services} />
+        <Route exact path="/services" component={Services} />
+        <Route exact path="/services/:serviceType" component={ServiceRegistration} />
         <Route exact path="/donations" component={Donations} />
         <Route exact path="/donations/:donationType" component={DonationPayment} />
         <Route exact path="/events" component={Events} />
         <Route path="/externalServices" component={ExternalServices} />
-        <Route path="/employee" component={Employee} />
+        <Route exact path="/employee" component={Employee} />
+        <Route exact path="/employee/admin" component={Admin} />
         <Route exact path='/events/registration/' component={EventRegistration}/>
         <Route exact path='/events/registration/:eventSpace' component={EventRegistration}/>
       </div>

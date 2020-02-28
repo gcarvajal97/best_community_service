@@ -201,6 +201,7 @@ const EmployeeLogin = withStyles(styles, { name: 'LoginPage' })(
                 fullWidth
                 variant={'contained'}
                 color={'primary'}
+                href={'/employee/admin'}
               >
                 Log in
               </Button>

@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 
-class ExternalServices extends Component {
+class Admin extends Component {
   
   render() {
     return (
-      <div className="ExternalServices">
+      <div className="Admin">
         <div>
-          <h1 style={{fontFamily: 'cursive', 'text-align': 'center'}}>External Services</h1>
+          <h1 style={{fontFamily: 'cursive', 'text-align': 'center'}}>Admin</h1>
         </div>
-        <div className="ExternalServices-content">
+        <div className="Admin-content">
           <h2 style={{fontFamily: 'cursive'}}>
-          Services for Elderly:
+          Divider of admin stuff:
           </h2>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -19,12 +18,9 @@ class ExternalServices extends Component {
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
           nisi ut aliquip ex ea commodo consequat.
           </p>
-          <Link style={{fontFamily: 'cursive', 'text-align': 'center'}}>
-        Generic Link to external 1
-        </Link>
           <p></p>
           <h2 style={{fontFamily: 'cursive'}}>
-          Services for those with disabilities:
+          Some Other divider:
           </h2>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -33,13 +29,10 @@ class ExternalServices extends Component {
           nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
-        <Link style={{fontFamily: 'cursive', 'text-align': 'center'}}>
-        Generic Link to external 2
-        </Link>
       </div>
     );
   }
   
 }
 
-export default ExternalServices;
+export default Admin;
